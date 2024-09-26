@@ -1,22 +1,10 @@
-pirates = ["Harry", "Isabel", "Bootstrap Bill", "Powder Joe", "Four Finger Fritz"]
+pirates = [
+    ("Harry", 5),
+    ("Isabel", 3)
+]
+ducats = 100
+sum_of_ranks = sum(rank for name, rank in pirates)
 
-ducats = 630
-sum_of_ranks = 0
-
-for pirate in pirates:
-    if pirate == "Harry":
-        sum_of_ranks += 5
-    elif pirate == "Isabel" or pirate == "Bootstrap Bill":
-        sum_of_ranks += 3
-    elif pirate == "Powder Joe" or pirate == "Four Finger Fritz":
-        sum_of_ranks += 2
-
-for pirate in pirates:
-    share = 0
-    if pirate == "Harry":
-        share = 5 / sum_of_ranks * ducats
-    elif pirate == "Isabel" or pirate == "Bootstrap Bill":
-        share = 3 / sum_of_ranks * ducats
-    elif pirate == "Powder Joe" or pirate == "Four Finger Fritz":
-        share = 2 / sum_of_ranks * ducats
-    print(f"{pirate} gets {share} Ducats.")
+for name, rank in pirates:
+    share = rank / sum_of_ranks * ducats
+    print(f"{name} gets {share} Ducats.")
