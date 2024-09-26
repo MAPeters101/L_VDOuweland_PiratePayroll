@@ -1,6 +1,6 @@
-pirates = ["Harry", "Isabel", "Bootstrap Bill", "Morgan", "Powder Joe"]
+pirates = ["Harry", "Isabel", "Bootstrap Bill", "Morgan", "Powder Joe", "Four Finger Fritz"]
 
-ducats = 480
+ducats = 630
 sum_of_ranks = 0
 
 for pirate in pirates:
