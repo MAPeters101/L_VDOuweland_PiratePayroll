@@ -1,6 +1,8 @@
 from data import DataLoader
+from data import JSONDataLoader
 
-loader = DataLoader()
+# loader = DataLoader()
+loader = JSONDataLoader()
 pirates = loader.load_pirates()
 
 ducats = 1024
