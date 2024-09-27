@@ -1,16 +1,31 @@
 class Pirate:
-    def __init__(self, name, title, rank):
+    def __init__(self, name):
         self.name = name
-        self.title = title
-        self.rank = rank
+
+class Captain(Pirate):
+    title = "Captain"
+    rank = 10
+
+class Quartermaster(Pirate):
+    title = "Quartermaster"
+    rank = 9
+
+class Officer(Pirate):
+    title = "Officer"
+    rank = 7
+
+class CannonOperator(Pirate):
+    title = "Cannon Operator"
+    rank = 6
+
 
 pirates = [
-    Pirate("Harry", "Captain", 10),
-    Pirate("Isabel", "Quatermaster", 9),
-    Pirate("Bootstrap Bill", "Officer", 7),
-    Pirate("Powder Joe", "Cannon Operator", 6),
-    Pirate("Four Finger Fritz", "Officer", 7),
-    Pirate("Lady Joyce", "Cannon Operator", 6)
+    Captain("Harry"),
+    Quartermaster("Isabel"),
+    Officer("Bootstrap Bill"),
+    CannonOperator("Powder Joe"),
+    Officer("Four Finger Fritz"),
+    CannonOperator("Lady Joyce")
 ]
 ducats = 920
 sum_of_ranks = sum(pirate.rank for pirate in pirates)
