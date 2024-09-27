@@ -1,8 +1,11 @@
 pirates = [
     ("Harry", 5),
-    ("Isabel", 3)
+    ("Isabel", 3),
+    ("Bootstrap Bill", 3),
+    ("Powder Joe", 2),
+    ("Four Finger Fritz", 2)
 ]
-ducats = 100
+ducats = 850
 sum_of_ranks = sum(rank for name, rank in pirates)
 
 for name, rank in pirates:
