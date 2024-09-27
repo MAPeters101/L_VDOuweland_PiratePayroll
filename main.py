@@ -1,16 +1,8 @@
-from pirates import Captain
-from pirates import Quartermaster
-from pirates import Officer
-from pirates import CannonOperator
+from data import DataLoader
 
-pirates = [
-    Captain("Harry"),
-    Quartermaster("Isabel"),
-    Officer("Bootstrap Bill"),
-    CannonOperator("Powder Joe"),
-    Officer("Four Finger Fritz"),
-    CannonOperator("Lady Joyce")
-]
+loader = DataLoader()
+pirates = loader.load_pirates()
+
 ducats = 920
 sum_of_ranks = sum(pirate.rank for pirate in pirates)
 
