@@ -9,9 +9,10 @@ pirates = [
     Pirate("Isabel", "Quatermaster", 9),
     Pirate("Bootstrap Bill", "Mate", 7),
     Pirate("Powder Joe", "Gunner", 6),
-    Pirate("Four Finger Fritz", "Mate", 7)
+    Pirate("Four Finger Fritz", "Mate", 7),
+    Pirate("Lady Joyce", "Gunner", 6)
 ]
-ducats = 850
+ducats = 920
 sum_of_ranks = sum(pirate.rank for pirate in pirates)
 
 for pirate in pirates:
