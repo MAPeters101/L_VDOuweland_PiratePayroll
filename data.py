@@ -12,5 +12,7 @@ class DataLoader:
             Officer("Bootstrap Bill"),
             CannonOperator("Powder Joe"),
             Officer("Four Finger Fritz"),
-            CannonOperator("Lady Joyce")
+            CannonOperator("Lady Joyce"),
+            Officer("Calypso"),
+            CannonOperator("Moustache Mike")
         ]
