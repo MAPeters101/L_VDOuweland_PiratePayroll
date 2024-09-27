@@ -2,6 +2,8 @@ from pirates import Captain
 from pirates import Quartermaster
 from pirates import Officer
 from pirates import CannonOperator
+from pirates import Cook
+from pirates import DeckScrubber
 import json
 
 class DataLoader:
@@ -31,6 +33,9 @@ class JSONDataLoader:
                 pirates.append(Officer(pirate["name"]))
             elif pirate["title"] == "Cannon Operator":
                 pirates.append(CannonOperator(pirate["name"]))
-
+            elif pirate["title"] == "Cook":
+                pirates.append(Cook(pirate["name"]))
+            elif pirate["title"] == "Deck Scrubber":
+                pirates.append(DeckScrubber(pirate["name"]))
         return pirates
 

@@ -18,5 +18,11 @@ class CannonOperator(Pirate):
     title = "Cannon Operator"
     rank = 6
 
+class Cook(Pirate):
+    title = "Cook"
+    rank = 3
 
+class DeckScrubber(Pirate):
+    title = "Deck Scrubber"
+    rank = 1
 
