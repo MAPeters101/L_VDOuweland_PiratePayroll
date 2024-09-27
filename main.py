@@ -1,13 +1,20 @@
+class Pirate:
+    def __init__(self, name, title, rank):
+        self.name = name
+        self.title = title
+        self.rank = rank
+
 pirates = [
-    ("Harry", "Captain", 10),
-    ("Isabel", "Quatermaster", 9),
-    ("Bootstrap Bill", "Mate", 7),
-    ("Powder Joe", "Gunner", 6),
-    ("Four Finger Fritz", "Mate", 7)
+    Pirate("Harry", "Captain", 10),
+    Pirate("Isabel", "Quatermaster", 9),
+    Pirate("Bootstrap Bill", "Mate", 7),
+    Pirate("Powder Joe", "Gunner", 6),
+    Pirate("Four Finger Fritz", "Mate", 7)
 ]
 ducats = 850
-sum_of_ranks = sum(rank for name, title, rank in pirates)
+sum_of_ranks = sum(pirate.rank for pirate in pirates)
 
-for name, title, rank in pirates:
-    share = rank / sum_of_ranks * ducats
-    print(f"{title} {name} gets {share:.2f} Ducats.")
+for pirate in pirates:
+    share = pirate.rank / sum_of_ranks * ducats
+    print(f"{pirate.title} {pirate.name} gets {share:.2f} Ducats.")
+
