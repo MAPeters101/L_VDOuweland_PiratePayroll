@@ -7,10 +7,10 @@ class Pirate:
 pirates = [
     Pirate("Harry", "Captain", 10),
     Pirate("Isabel", "Quatermaster", 9),
-    Pirate("Bootstrap Bill", "Mate", 7),
-    Pirate("Powder Joe", "Gunner", 6),
-    Pirate("Four Finger Fritz", "Mate", 7),
-    Pirate("Lady Joyce", "Gunner", 6)
+    Pirate("Bootstrap Bill", "Officer", 7),
+    Pirate("Powder Joe", "Cannon Operator", 6),
+    Pirate("Four Finger Fritz", "Officer", 7),
+    Pirate("Lady Joyce", "Cannon Operator", 6)
 ]
 ducats = 920
 sum_of_ranks = sum(pirate.rank for pirate in pirates)
