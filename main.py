@@ -1,8 +1,8 @@
 from data import TestDataLoader
 from data import JSONDataLoader
 
-loader = TestDataLoader()
-# loader = JSONDataLoader()
+# loader = TestDataLoader()
+loader = JSONDataLoader()
 pirates = loader.load_pirates()
 
 ducats = 100
