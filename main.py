@@ -5,7 +5,7 @@ from data import JSONDataLoader
 loader = JSONDataLoader()
 pirates = loader.load_pirates()
 
-ducats = 1430
+ducats = 1610
 sum_of_ranks = sum(pirate.role.rank for pirate in pirates)
 
 for pirate in pirates:
