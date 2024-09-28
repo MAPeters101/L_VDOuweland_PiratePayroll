@@ -1,5 +1,7 @@
 from pirates import Pirate
 from pirates import Role
+from mission import Mission
+
 import json
 
 class TestDataLoader:
@@ -8,6 +10,13 @@ class TestDataLoader:
             Pirate("Zork", Role("Grand Nagus", 10)),
             Pirate("Wonka Tonka", Role("Snow Queen", 8)),
             Pirate("Spartacus", Role("Gladiator", 2))
+        ]
+
+    def load_missions(self):
+        pirates = self.load_pirates()
+        return [
+            Mission("Sea Battle 1", pirates[:2], 100),  # First two pirates, 100 Ducats.
+            Mission("Sea Battle 2", pirates, 200)       # All pirates, 200 Ducats
         ]
 
 class JSONDataLoader:
