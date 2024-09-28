@@ -1,11 +1,11 @@
-from data import DataLoader
+from data import TestDataLoader
 from data import JSONDataLoader
 
-# loader = DataLoader()
-loader = JSONDataLoader()
+loader = TestDataLoader()
+# loader = JSONDataLoader()
 pirates = loader.load_pirates()
 
-ducats = 1610
+ducats = 100
 sum_of_ranks = sum(pirate.role.rank for pirate in pirates)
 
 for pirate in pirates:

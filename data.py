@@ -2,17 +2,12 @@ from pirates import Pirate
 from pirates import Role
 import json
 
-class DataLoader:
+class TestDataLoader:
     def load_pirates(self):
         return [
-            Captain("Harry"),
-            Quartermaster("Isabel"),
-            Officer("Bootstrap Bill"),
-            CannonOperator("Powder Joe"),
-            Officer("Four Finger Fritz"),
-            CannonOperator("Lady Joyce"),
-            Officer("Calypso"),
-            CannonOperator("Moustache Mike")
+            Pirate("Zork", Role("Grand Nagus", 10)),
+            Pirate("Wonka Tonka", Role("Snow Queen", 8)),
+            Pirate("Spartacus", Role("Gladiator", 2))
         ]
 
 class JSONDataLoader:
