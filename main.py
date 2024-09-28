@@ -2,8 +2,8 @@ from data import TestDataLoader
 from data import JSONDataLoader
 from payroll import Payroll
 
-loader = TestDataLoader()
-#loader = JSONDataLoader()
+# loader = TestDataLoader()
+loader = JSONDataLoader()
 
 payroll = Payroll()
 missions = loader.load_missions()

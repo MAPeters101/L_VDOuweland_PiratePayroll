@@ -26,3 +26,8 @@ class JSONDataLoader:
         pirates = [Pirate(pirate["name"], Role(pirate["title"], pirate["rank"])) for pirate in data["pirates"]]
         return pirates
 
+    def load_missions(self):
+        with open("data.json") as file:
+            data = json.load(file)
+        pirates = self.load_pirates()
+        return [Mission(m["name"], [p for p in pirates if p.name in m["crew"]], m["loot"]) for m in data["missions"]]
