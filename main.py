@@ -3,8 +3,8 @@ from data import JSONDataLoader
 from payroll import Payroll
 from exchange import Bank
 
-loader = TestDataLoader()
-# loader = JSONDataLoader()
+# loader = TestDataLoader()
+loader = JSONDataLoader()
 
 bank = Bank(loader)
 payroll = Payroll()
