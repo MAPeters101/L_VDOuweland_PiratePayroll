@@ -8,5 +8,6 @@ class Share:
 
 class Payroll:
     def calculate_shares(self, crew, ducats):
+        # sum function needs an iterable.  This uses a generator to iterate thru the ranks of the pirates.
         sum_of_ranks = sum(pirate.role.rank for pirate in crew)
         return [Share(pirate, pirate.role.rank / sum_of_ranks * ducats) for pirate in crew]
